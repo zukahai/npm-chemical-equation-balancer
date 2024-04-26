@@ -14,20 +14,46 @@ Key Features:
 - **Integration-Friendly**: Simple API for seamless integration into educational tools, simulation software, or chemical processing applications.
 
 
-
 ## ❯ Install
 
 ```bash
-npm install chemical-equation-balancer-haizuka
+npm install @haizuka/chemical-equation-balancer
 ```
 
 ## ❯ Usage
 
 ```javascript
-import { chemicalEquationBalancer } from 'chemical-equation-balancer-haizuka';
+const { chemicalEquationBalancer } = require('@haizuka/chemical-equation-balancer');
 
 const cbe = chemicalEquationBalancer("H2 + O2 = H2O");
 const textResult = cbe.text;
 
 console.log(textResult); // 2H2 + O2 = 2H2O
+
+```
+
+**chemicalEquationBalancer(String text)**:
+- `text`: A string containing the chemical equation to be balanced.
+- Elements are written with the first letter capitalized, for example: H, O, C, N, Cl, Ca, Fe, ...
+- Within a compound, elements are written together without spaces, e.g., H2O, CO2, CaCl2, ...
+- Compounds are separated by the `+` sign, for example: H2 + O2, CaCO3 + HCl, ...
+- Reactants and products are separated by the `=` sign, '->', or '→'.
+
+**Return Value**:
+
+A JSON string containing the following parameters:
+
+- `message`: Represents the result message of the chemical equation.
+- `result`: Represents the parameters during the balancing process.
+- `text`: Represents the balanced chemical equation.
+## Examples
+
+```javascript
+const { chemicalEquationBalancer } = require('@haizuka/chemical-equation-balancer');
+
+const cbe = chemicalEquationBalancer("H2 + O2 = H2O");
+const textResult = cbe.text;
+
+console.log(textResult); // 2H2 + O2 = 2H2O
+
 ```

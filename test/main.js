@@ -1,6 +1,6 @@
-import { chemicalEquationBalancer } from 'chemical-equation-balancer-haizuka';
+const { chemicalEquationBalancer } = require('../index.js');
 
-const cbe = chemicalEquationBalancer("H2 + O2 = H2O");
-const textResult = cbe.text;
+const equation = 'Fe + O2 -> Fe2O3';
+const result = chemicalEquationBalancer(equation);
 
-console.log(textResult); // 2H2 + O2 = 2H2O
+console.log(result);

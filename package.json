@@ -1,6 +1,6 @@
 {
-  "name": "chemical-equation-balancer-haizuka",
-  "version": "1.0.3",
+  "name": "@haizuka/chemical-equation-balancer",
+  "version": "1.0.0",
   "description": "A useful package for demonstration purposes",
   "keywords": [
     "chemical",
@@ -10,7 +10,6 @@
     "haizuka"
   ],
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,7 +17,6 @@
     "type": "git",
     "url": "git+https://github.com/zukahai/npm-chemical-equation-balancer.git"
   },
-  "keywords": [],
   "author": "HaiZuka",
   "license": "ISC",
   "bugs": {

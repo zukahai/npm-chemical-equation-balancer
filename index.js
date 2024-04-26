@@ -1,4 +1,4 @@
-export function chemicalEquationBalancer(str){
+function chemicalEquationBalancer(str){
     let text = 'Please double check your chemical equation'
     let success = true;
     try {
@@ -286,4 +286,8 @@ function gcdTwoNumbers(x, y) {
         x = t;
     }
     return x;
+}
+
+module.exports = {
+    chemicalEquationBalancer
 }
