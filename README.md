@@ -17,13 +17,13 @@ Key Features:
 ## ❯ Install
 
 ```bash
-npm install @haizuka/chemical-equation-balancer
+npm install chemical-equation-balancer-haizuka
 ```
 
 ## ❯ Usage
 
 ```javascript
-const { chemicalEquationBalancer } = require('@haizuka/chemical-equation-balancer');
+const { chemicalEquationBalancer } = require('chemical-equation-balancer-haizuka');
 
 const cbe = chemicalEquationBalancer("H2 + O2 = H2O");
 const textResult = cbe.text;
@@ -49,7 +49,7 @@ A JSON string containing the following parameters:
 ## Examples
 
 ```javascript
-const { chemicalEquationBalancer } = require('@haizuka/chemical-equation-balancer');
+const { chemicalEquationBalancer } = require('chemical-equation-balancer-haizuka');
 
 const cbe = chemicalEquationBalancer("H2 + O2 = H2O");
 const textResult = cbe.text;
